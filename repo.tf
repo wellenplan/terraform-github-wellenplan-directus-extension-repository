@@ -15,9 +15,12 @@ resource "github_repository" "repo" {
 
   vulnerability_alerts = true
 
-  template {
-    owner      = var.organization
-    repository = var.template
+  dynamic "template" {
+    for_each = var.has_template ? [var.template] : []
+    content {
+      owner      = var.organization
+      repository = template.value
+    }
   }
 }
 

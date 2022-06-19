@@ -16,6 +16,12 @@ variable "organization" {
   default = "wellenplan"
 }
 
+variable "has_template" {
+  description = "Disable if the repo was created without using the template from `template`"
+
+  default = true
+}
+
 variable "template" {
   description = "Template to use for creating new repos"
 
