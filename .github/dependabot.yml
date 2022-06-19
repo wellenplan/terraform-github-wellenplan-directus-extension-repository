@@ -6,7 +6,7 @@ updates:
       interval: "daily"
     commit-message:
       prefix: "chore(ci): "
-  - package-ecosystem: "go"
+  - package-ecosystem: "gomod"
     directory: "/"
     schedule:
       interval: "daily"
