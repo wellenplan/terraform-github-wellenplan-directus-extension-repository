@@ -1,9 +1,23 @@
+terraform {
+  required_providers {
+    github = {
+      source  = "integrations/github"
+      version = "~> 4.0"
+    }
+  }
+}
+
 provider "github" {
   owner = "wellenplan"
+  alias = "wellenplan"
 }
 
 module "github_wellenplan_directus_extension_repository" {
   source = "../"
+
+  providers = {
+    github = github.wellenplan
+  }
 
   name = "directus-extension-test"
 
