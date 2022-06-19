@@ -32,6 +32,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_default_branch"></a> [default\_branch](#input\_default\_branch) | Name of default branch for repo. Used to set up branch protection. | `string` | `"main"` | no |
 | <a name="input_description"></a> [description](#input\_description) | Description of managed repo. | `string` | n/a | yes |
+| <a name="input_has_template"></a> [has\_template](#input\_has\_template) | Disable if the repo was created without using the template from `template` | `bool` | `true` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of the managed repo. | `string` | n/a | yes |
 | <a name="input_organization"></a> [organization](#input\_organization) | GitHub organisation that owns the repo. | `string` | `"wellenplan"` | no |
 | <a name="input_template"></a> [template](#input\_template) | Template to use for creating new repos | `string` | `"directus-extension-wellenplan-template"` | no |
