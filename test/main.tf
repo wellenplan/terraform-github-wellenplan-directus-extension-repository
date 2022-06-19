@@ -1,3 +1,6 @@
+provider "github" {
+  owner = "wellenplan"
+}
 
 module "github_wellenplan_directus_extension_repository" {
   source = "../"
