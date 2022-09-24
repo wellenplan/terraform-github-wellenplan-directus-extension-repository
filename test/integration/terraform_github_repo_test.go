@@ -23,9 +23,4 @@ func TestTerraformGitHubRepo(t *testing.T) {
 
 	htmlURL := terraform.Output(t, terraformOptions, "html_url")
 	assert.Equal(t, "https://github.com/wellenplan/directus-extension-test", htmlURL)
-
-	branches := terraform.OutputListOfObjects(t, terraformOptions, "branches")
-	assert.Equal(t,
-		[]map[string]interface{}([]map[string]interface{}{{"name": "main", "protected": false}}),
-		branches)
 }

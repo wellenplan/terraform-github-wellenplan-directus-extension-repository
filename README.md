@@ -7,13 +7,13 @@ Used by [terraform-infra-github](https://github.com/wellenplan/terraform-infra-g
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_github"></a> [github](#requirement\_github) | ~> 4.0 |
+| <a name="requirement_github"></a> [github](#requirement\_github) | ~> 5.2 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_github"></a> [github](#provider\_github) | ~> 4.0 |
+| <a name="provider_github"></a> [github](#provider\_github) | ~> 5.2 |
 
 ## Modules
 
@@ -41,6 +41,5 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_branches"></a> [branches](#output\_branches) | Default branches for the created repo. |
 | <a name="output_html_url"></a> [html\_url](#output\_html\_url) | HTML URL of the created repo. |
 <!-- END_TF_DOCS -->
