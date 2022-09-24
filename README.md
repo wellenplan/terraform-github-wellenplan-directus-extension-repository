@@ -13,7 +13,7 @@ Used by [terraform-infra-github](https://github.com/wellenplan/terraform-infra-g
 
 | Name | Version |
 |------|---------|
-| <a name="provider_github"></a> [github](#provider\_github) | ~> 4.2 |
+| <a name="provider_github"></a> [github](#provider\_github) | 5.3.0 |
 
 ## Modules
 
