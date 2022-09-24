@@ -27,7 +27,3 @@ module "github_wellenplan_directus_extension_repository" {
 output "html_url" {
   value = module.github_wellenplan_directus_extension_repository.html_url
 }
-
-output "branches" {
-  value = module.github_wellenplan_directus_extension_repository.branches
-}
