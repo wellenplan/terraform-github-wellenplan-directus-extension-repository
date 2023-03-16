@@ -100,7 +100,7 @@ jobs:
       - name: Unit Test Status (Terraform Plan)
         if: steps.plan.outcome == 'failure'
         run: exit 1
-      - uses: actions/setup-go@v3
+      - uses: actions/setup-go@v4
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         with:
           go-version-file: 'go.mod'
